@@ -1,0 +1,18 @@
+/* chatpage.module.css */
+
+.mainpage {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow: hidden; /* Prevents scrolling */
+  }
+  
+  
+  
+  .right {
+    flex: 1; /* Takes the remaining space */
+    display: flex;
+    flex-direction: column;
+    background-color: #e5ddd5; 
+  }
+  

@@ -1,0 +1,76 @@
+/* SignInPage.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.formContainer {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.logo {
+  font-size: 36px;
+  color: #1877f2;
+  margin-bottom: 20px;
+  /* background: -webkit-linear-gradient(#1f1fb8,#00d4ff); */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.signInButton {
+  padding: 10px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* .signInButton:hover {
+  background-color: #165fbd;
+} */
+
+.accountstatus {
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* .divider {
+  margin: 20px 0;
+}
+ */
+.signUpButton {
+  padding: 10px;
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signUpButton:hover {
+  background-color: #36a420;
+}

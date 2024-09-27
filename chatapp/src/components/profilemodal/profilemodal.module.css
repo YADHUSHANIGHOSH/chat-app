@@ -1,0 +1,137 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Slightly darker background for better focus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
+  }
+  
+  .modalContent {
+    background: white;
+    padding: 30px 20px; /* Slightly more padding for better spacing */
+    border-radius: 12px; /* Softer corners */
+    width: 100%;
+    max-width: 450px; /* Responsive width with a max width */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for a modern look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: modalFadeIn 0.3s ease; /* Add a fade-in animation */
+  }
+  
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide from above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .profileIcon {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #555; /* Neutral color for the profile icon */
+    transition: color 0.2s ease;
+  }
+  
+  .profileIcon:hover {
+    color: #000; /* Darker color on hover */
+  }
+  
+  .profilePicContainer {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profilePic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure image fits well in the circular container */
+    border: 2px solid #ddd; /* Add a subtle border */
+  }
+  
+  .defaultPic {
+    font-size: 120px;
+    color: #bbb;
+  }
+  
+  .fileInput {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .inputContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .nameInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .saveButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 25px; /* Slightly larger button */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    width: 100%; /* Full-width for better mobile UX */
+  }
+  
+  .saveButton:hover {
+    background-color: #45a049;
+  }
+  
+  .closeButton {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+    width: 100%; /* Full-width for better mobile UX */
+  }
+  
+  .closeButton:hover {
+    background-color: #e53935;
+  }
+  
+  @media (max-width: 768px) {
+    .modalContent {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .profilePic {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .saveButton, .closeButton {
+      padding: 10px;
+    }
+  }
+  

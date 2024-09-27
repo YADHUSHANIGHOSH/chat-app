@@ -1,0 +1,146 @@
+.welcome {
+  color: rgb(67, 147, 194);
+
+  align-items: center;
+  justify-content: center;
+}
+.chatBox {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-left: 1px solid #ddd;
+  background-color: #e5ddd5;
+}
+
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #075e54;
+  color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.chatHeaderInfo {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.userName {
+  margin: 0;
+  font-size: 16px;
+}
+
+.userStatus {
+  margin: 0;
+  font-size: 12px;
+  color: #b0c4b1;
+}
+
+.chatHeaderActions {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #128c7e;
+}
+
+.chatArea {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  overflow-x: auto;
+  background-color: #f0f0f0;
+  max-height: 460px;
+}
+
+.message {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 40%;
+}
+
+.messageOwn {
+  background-color: #dcf8c6; /* Light green for sender */
+  margin-left: auto;
+  text-align: right;
+}
+
+.messageText {
+  font-size: 14px;
+}
+
+.chatInputArea {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+  background-color: white;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin: 0 10px;
+  outline: none;
+  background-color: #f0f0f0;
+}
+
+.sendButton {
+  padding: 10px 15px;
+  background-color: #075e54;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sendButton:hover {
+  background-color: #128c7e;
+}
+
+.chatSearch {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.localVideo,
+.remoteVideo {
+  width: 45%;
+  height: auto;
+  border: 2px solid black;
+}
